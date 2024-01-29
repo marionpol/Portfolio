@@ -1,7 +1,6 @@
 * {
     color: #333;
-    font-family: 'Kokoro';
-    font-style: normal;
+    font-family: 'Kokoro', sans-serif;
     line-height: normal;
 }
 
@@ -46,9 +45,7 @@ nav {
     display: flex;
     gap: 1rem;
     text-align: center;
-    -webkit-text-stroke-width: 1;
-    -webkit-text-stroke-color: #000;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 24px;
   }
   
@@ -77,18 +74,66 @@ nav {
 
     /*--- ABOUT ME ---*/
 
-  .about-me{
+#about-me{
     margin-top: 120px;
-    display: flex;
-    flex-direction: column;
   }
 
-  .about-me h2{
-    display: flex;
-    margin-left: 100px;
+#about-me h2 {
+    font-family: 'Kokoro', sans-serif;
     font-size: 30px;
     color: #333;
     letter-spacing: 1px;
-    margin-top: 100px;
+    margin-top: 175px;
+    margin-left: 170px; 
+}
 
-  }
+#about-me .content{
+    padding-top: 6px;
+    display: flex;
+    flex-direction: row;
+}
+
+#about-me .text {
+    flex: 1;
+    margin-right: 20px;
+}
+#about-me .text p {
+    margin-left: 30px;
+    font-size: 18px;
+    text-align:justify;
+}
+
+#about-me .content img {
+    position: relative;
+
+    width: auto;
+    height: 400px;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+
+/*--- My skills ---*/
+#my-skills {
+    padding-top: 1dvh;
+    background-color: #748386;
+}
+
+#my-skills h2{
+    font-family: 'Kokoro', sans-serif;
+    font-size: 30px;
+    color: #333;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#my-skills .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-skills .content img{
+    height: 200px;
+    width: auto;
+}
