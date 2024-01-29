@@ -1,5 +1,4 @@
 * {
-    color: #333;
     font-family: 'Kokoro', sans-serif;
     line-height: normal;
 }
@@ -7,6 +6,7 @@
     /*--- NAVIGATION ---*/
 
 nav {
+    color:#333;
     width: 100%;
     position: fixed;
     top: 0;
@@ -43,7 +43,9 @@ nav {
   }
 
   .nav-logo img:hover{
-    transform: scale(1.1);
+    transition: 0.3s;
+    height: 105px;
+    width: auto;
   }
 
   .nav-menu {
@@ -72,12 +74,11 @@ nav {
     text-decoration-color: #a8b1b3;
 }
   
-  .nav-scroll {
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
     /*--- ABOUT ME ---*/
+
+#about-me {
+  color:#333;
+} 
 
 #about-me h2 {
     font-family: 'Kokoro', sans-serif;
@@ -169,15 +170,59 @@ nav {
 /*--- My projects ---*/
 
 #my-projects {
-  padding-top: 1dvh;
+  padding-top: 1vh;
 }
-#my-projects h2{
+
+#my-projects h2 {
   font-family: 'Kokoro', sans-serif;
-    font-size: 50px;
-    font-weight: 400;
-    color: #333;
-    letter-spacing: 1px;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #748386;
+  font-size: 50px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #748386;
+}
+
+#my-projects .projects{
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+#my-projects .project h4 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#my-projects .project img {
+  height: 400px;
+  width: auto;
+  border-radius: 10px;
+}
+
+#my-projects .project img:hover {
+  filter: blur(1.5px);
+}
+
+#my-projects .project .text {
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  visibility: hidden;
+  transition: visibility 0.3s, opacity 0.3s;
+  opacity: 0;
+  z-index: 1;
+  max-width: 80%;
+  text-align: center;
+}
+
+#my-projects .project:hover .text {
+  visibility: visible;
+  opacity: 1;
 }
