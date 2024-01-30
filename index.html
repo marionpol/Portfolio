@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <nav id="nav-bar">
+    <nav id="nav" class="nav-bar">
     <ul class="nav-logo">
         <li><a href="#"><img src="images/logo.png"></a></li>
     </ul>
@@ -51,7 +51,6 @@
                 <img src="images/css.png">
                 <img src="images/javascript.png">
             </div>
-        </br>
             <div class="row">
             <img src="images/figma.png">
             <img src="images/mariadb.png">
@@ -62,28 +61,47 @@
     <section id="my-projects">
         <h2>My projects</h2>
         <div class="projects">
-            <div class="project">
-                <h4>Memory card game</h4>
-                <a href="https://marionvs23.ikt.khk.ee/javascript/final/" target="_blank"><img src="images/memorygame.png"></a>
-                <div class="text">
-                    <p>A simple memory card game which has a score system and there is a timeframe to finish the game.</br>It also has a toggle for dark/light mode</p>
-                </div>
-            </div>
-            <div class="project">
-                <h4>Photographers site</h4>
-                <a href="https://marionvs23.ikt.khk.ee/veebiarendus/lopuprojekt/veeb-osa-eng.html" target="_blank"><img src="images/photographer.png"></a>
+            <div class="image-container">
+                <a href="https://marionvs23.ikt.khk.ee/javascript/final/" target="_blank">
+                    <img src="images/memorygame.png">
                     <div class="text">
-                        <p>A website made with a partner for a client who is a photograph.</br> First proper website I have made</p>
+                        <h4>Memory card game</h4> 
                     </div>
+                </a>
             </div>
-            <div class="project">
-                <h4>Competition "Aasta tegija 2024"</h4>
-                <a href="https://marionvs23.ikt.khk.ee/javascript/aasta_tegija/" target="_blank"><img src="images/competition.png"></a>
-                <div class="text">
-                    <p>Another group project which is not fully finished since there was a timeframe of around 36h to finish the website which was not enough time.</p>
-                </div>
+            <div class="image-container">
+                <a href="https://marionvs23.ikt.khk.ee/veebiarendus/lopuprojekt/veeb-osa-eng.html" target="_blank">
+                    <img src="images/photographer.png">
+                    <div class="text">
+                        <h4>Photographers site</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="https://marionvs23.ikt.khk.ee/javascript/aasta_tegija/" target="_blank">
+                    <img src="images/competition.png">
+                    <div class="text">
+                        <h4>Competition "Aasta tegija 2024"</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section> 
+
+    <section id="cv">
+        <a href="https://www.canva.com/design/DAFwwYwUKt8/view"><h2>My resume</h2></a>
+        <div class="cv-area">
+            <div class="cv-container">    
+                <iframe loading="lazy"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFwwYwUKt8&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
             </div>
         </div>
     </section>
+
+    <section id="contact">
+        
+    </section>
+    <script src="script.js"></script> 
 </body>
 </html>
