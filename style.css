@@ -3,6 +3,30 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section#about-me {
+  scroll-margin-top: 100px;
+}
+
+section#my-skills {
+  scroll-margin-top: 80px; 
+}
+
+section#my-projects {
+  scroll-margin-top: 10px; 
+}
+
+section#contact {
+  scroll-margin-top: 10px; 
+}
+
+.scroll-target {
+  scroll-margin-top: 10px; 
+}
+
 
     /*--- NAVIGATION ---*/
 
@@ -81,44 +105,45 @@
 
 #about-me {
   color:#333;
+  padding-top: 9.5rem;
 } 
 
 #about-me h2 {
-    font-family: 'Kokoro', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: #333;
-    letter-spacing: 1px;
-    margin-top: 225px;
-    margin-left: 20vh; 
-    text-decoration: underline;
-    text-decoration-color: #748386;
+  margin-left: 5rem;
+  font-family: 'Kokoro', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-decoration-color: #748386;
 }
 
 #about-me .content{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
 }
 
 #about-me .text {
-    flex: 1;
-    margin-right: 100px;
+  flex: 1;
+  margin-right: 5rem;
 }
+
 #about-me .text p {
-    margin-left: 100px;
-    font-size: 22px;
-    text-align:justify;
+  margin-left: 5rem;
+  font-size: 22px;
+  text-align:justify;
 }
 
 #about-me .content img {
-    position: relative;
-    bottom: 13vh;
-    width: auto;
-    height: 700px;
-    border-radius: 10px;
-    margin-right: 7rem;
-    box-shadow: 0 6px 10px #748386;
+  position: relative;
+  bottom: 13vh;
+  width: auto;
+  height: 700px;
+  border-radius: 10px;
+  margin-right: 5rem;
+  box-shadow: 0 6px 10px #748386;
 }
 
 #about-me .wave img{
@@ -128,16 +153,14 @@
   margin: 0 10px 10px 0;
   transform: rotate(270deg);
   left: 56%;
-  bottom: 3%;
-  
+  bottom: 4%;
 }
 
 
 /*--- My skills ---*/
 #my-skills {
-    padding-top: 1.5rem;
+    padding: 1.5rem;
     background-color: #748386;
-    margin-bottom: 50px;
 }
 
 #my-skills h2{
@@ -149,6 +172,7 @@
     text-decoration: underline;
     text-decoration-color: #a8b1b3;
     font-weight: 400;
+    margin-bottom: 50px;
 }
 
 #my-skills .content{
@@ -160,14 +184,13 @@
 
 #my-skills .row{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: 20px;
 }
 
 #my-skills .row img{
     height: 250px;
     width: auto;
-    margin-right: 40px;
 }
 
 /*--- My projects ---*/
@@ -243,8 +266,8 @@
 #cv {
   background-color: rgba(116, 131, 134, 0.5);
 }
-#cv h2{
-  padding: 1.5rem;
+.cv-head h2{
+  padding-top: 2.5rem;
   font-family: 'Kokoro', sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
@@ -255,7 +278,12 @@
   text-decoration-color: #748386;
 }
 #cv a{
+  font-family: 'Kokoro', sans-serif;
   text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 1px;
 }
 
 .cv-area{
@@ -263,7 +291,6 @@
   justify-content: center;
   align-items: center;
   height: 80rem;
-  margin: 0;
 }
 
 .cv-container {
