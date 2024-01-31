@@ -42,7 +42,7 @@ section#contact {
     left: 0;
     z-index: 99;
     letter-spacing: 2px;
-    background-color: rgba(116, 131, 134, 1);
+    background-color: rgba(116, 131, 134, 0.95);
     backdrop-filter: blur(10px);
     height: 75px;
   }
@@ -109,13 +109,14 @@ section#contact {
 
 #about-me {
   color:#333;
-  padding-top: 9.5rem;
+  padding-top: 10.5rem;
 } 
 
 #about-me h2 {
-  margin-left: 5rem;
+  margin-left: 10rem;
+  margin-bottom: 2.5rem;
   font-family: 'Kokoro', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 400;
   color: #333;
   letter-spacing: 1px;
@@ -124,38 +125,47 @@ section#contact {
 }
 
 #about-me .content{
-  margin-top: 1.5rem;
   display: flex;
   flex-direction: row;
 }
 
 #about-me .text {
   flex: 1;
-  margin-right: 5rem;
+  margin-right: 25rem;
 }
 
 #about-me .text p {
-  margin-left: 5rem;
-  font-size: 22px;
+  margin-left: 10rem;
+  font-size: 1.6rem;
   text-align:justify;
 }
 
 #about-me .content img {
   position: relative;
-  bottom: 13vh;
+  bottom: 2.5rem;
   width: auto;
-  height: 700px;
+  height: 600px;
   border-radius: 10px;
-  margin-right: 5rem;
+  right: 10rem;
   box-shadow: 0 6px 10px #748386;
 }
 
 #about-me .plant-img{
   position: absolute;
-  right: 35rem;
+  left: -2rem;
   top: 0;
-  transform: rotate(180deg);
-  height: 500px;
+  transform: rotate(140deg);
+  height: 300px;
+  width: auto;
+  z-index: 1;
+}
+
+#about-me .plant-img2{
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+  transform: rotate(145deg);
+  height: 300px;
   width: auto;
   z-index: -1;
 }
@@ -177,7 +187,7 @@ section#contact {
     letter-spacing: 1px;
     text-align: center;
     text-decoration: underline;
-    text-decoration-color: #a8b1b3;
+    text-decoration-color: #748386;
     font-weight: 400;
     margin-bottom: 50px;
 }
@@ -259,13 +269,19 @@ section#contact {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 400;
-  color: #333;
   font-size: 2rem; 
   visibility: hidden;
   transition: visibility 0.3s, opacity 0.3s;
   opacity: 0;
   max-width: 80%;
-  text-align: center;
+  text-align: justify;
+  background-color: rgba(116, 131, 134, 0.5);
+  padding: 400px;
+
+}
+
+#my-projects .text h4{
+  color: #fff;
 }
 
 #my-projects .image-container:hover .text {
@@ -282,7 +298,7 @@ section#contact {
 }
 
 #my-projects .image-container:hover img {
-  filter: blur(2.5px);
+  filter: blur(3.5px);
 }
 
 /*--- CV ---*/
@@ -299,6 +315,7 @@ section#contact {
   text-align: center;
   text-decoration: underline;
   text-decoration-color: #748386;
+  margin-bottom: -2rem;
 }
 #cv a{
   font-family: 'Kokoro', sans-serif;
@@ -313,14 +330,15 @@ section#contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80rem;
+  height: 75rem;
 }
+
 
 .cv-container {
   position: relative;
-  width: 46%;
+  width: 39%;
   height: auto;
-  padding-top: 65%;
+  padding-top: 55%;
   box-shadow: 0 2px 8px 0 rgba(255, 255, 255, 0.8);
   will-change: transform;
   border-radius: 10px;
@@ -338,6 +356,25 @@ section#contact {
   margin: 0;
 }
 
+#cv .cv-plant{
+  position: absolute;
+  bottom: -140rem;
+  width: auto;
+  height: 800px;
+  z-index: -1;
+  transform: rotate(300deg);
+  left:23rem;
+}
+
+#cv .cv-flower{
+  position: absolute;
+  bottom: -120rem;
+  width: auto;
+  height: 800px;
+  z-index: -1;
+  transform: rotate(30deg);
+  right:14rem;
+}
 /*--- Contact ---*/
 
 #contact h2{
@@ -357,7 +394,28 @@ section#contact {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Kokoro', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
+
+
+#contact .fa-solid.fa-envelope{
+  color: #748386;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: -1.25rem;
+}
+
+#contact .fa-solid.fa-phone{
+  color: #748386;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: -1.25rem;
+}
+
 
 #contact .contact-info{
   display: flex;
@@ -365,12 +423,39 @@ section#contact {
   justify-content: center;
   flex-direction: row;
   width: auto;
-  height: 65px;
+  height: 2.5rem;
+  gap: 1.5rem;
 }
 
 #contact .contact-info img{
   width: auto;
   height: 65px;
+}
+
+#contact .contact-flower{
+  position:absolute;
+  height: 400px;
+  width: auto;
+  bottom: -165rem;
+  right: 5rem;
+}
+
+#contact .contact-plant{
+  position:absolute;
+  height: 400px;
+  width: auto;
+  bottom: -158.7rem;
+  left: 1rem;
+  transform: rotate(180deg);
+}
+
+#contact h3{
+  font-family: 'Kokoro', sans-serif;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 
