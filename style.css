@@ -1,5 +1,9 @@
 * {
     font-family: 'Kokoro', sans-serif;
+    padding-right: 0;
+    margin-right:0;
+    padding-left: 0;
+    margin-left:0;
 
 }
 
@@ -50,8 +54,8 @@ section#contact {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 1rem;
-    margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     transition: background-color 0.3s ease;
   }
 
@@ -65,6 +69,7 @@ section#contact {
 
   .nav-logo img{
     position: absolute;
+    left: 2.5rem;
     bottom: 10px;
     height: 90px;
     width: auto;
@@ -87,7 +92,6 @@ section#contact {
   
 .nav-menu a {
       padding-right: 1.25rem;
-      border: 2px solid transparent;
       text-decoration: none;
       font-size: 1.75rem;
       font-weight: 400;
@@ -146,21 +150,24 @@ section#contact {
   box-shadow: 0 6px 10px #748386;
 }
 
-#about-me .wave img{
+#about-me .plant-img{
   position: absolute;
-  width: 1000px;
-  height: auto;
-  margin: 0 10px 10px 0;
-  transform: rotate(270deg);
-  left: 56%;
-  bottom: 4%;
+  right: 35rem;
+  top: 0;
+  transform: rotate(180deg);
+  height: 500px;
+  width: auto;
+  z-index: -1;
 }
+
 
 
 /*--- My skills ---*/
 #my-skills {
-    padding: 1.5rem;
-    background-color: #748386;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: rgba(116, 131, 134, 0.7);
+    max-width: 100%;
 }
 
 #my-skills h2{
@@ -191,6 +198,21 @@ section#contact {
 #my-skills .row img{
     height: 250px;
     width: auto;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+#my-skills img {
+  animation: shake 0.5s ease-in-out;
+}
+#my-skills img:hover {
+  animation: shake 0.5s ease-in-out infinite;
 }
 
 /*--- My projects ---*/
@@ -247,6 +269,7 @@ section#contact {
 }
 
 #my-projects .image-container:hover .text {
+  z-index: 2;
   visibility: visible;
   opacity: 1;
 }
@@ -264,7 +287,7 @@ section#contact {
 
 /*--- CV ---*/
 #cv {
-  background-color: rgba(116, 131, 134, 0.5);
+  background-color: rgba(116, 131, 134, 0.3);
 }
 .cv-head h2{
   padding-top: 2.5rem;
@@ -314,3 +337,41 @@ section#contact {
   padding: 0;
   margin: 0;
 }
+
+/*--- Contact ---*/
+
+#contact h2{
+  padding-top: 1.5rem;
+  font-family: 'Kokoro', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #748386;
+}
+
+#contact h4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contact-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: auto;
+  height: 65px;
+}
+
+#contact .contact-info img{
+  width: auto;
+  height: 65px;
+}
+
+
+
