@@ -20,15 +20,19 @@ section#my-skills {
 }
 
 section#my-projects {
-  scroll-margin-top: 10px; 
+  scroll-margin-top: 80px; 
+}
+
+section#cv {
+  scroll-margin-top: 80px; 
 }
 
 section#contact {
-  scroll-margin-top: 10px; 
+  scroll-margin-top: 80px; 
 }
 
 .scroll-target {
-  scroll-margin-top: 10px; 
+  scroll-margin-top: 80px; 
 }
 
 
@@ -54,8 +58,7 @@ section#contact {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     transition: background-color 0.3s ease;
   }
 
@@ -68,16 +71,16 @@ section#contact {
   }
 
   .nav-logo img{
-    position: absolute;
+    position: relative;
+    top: 1.5rem;
     left: 2.5rem;
-    bottom: 10px;
-    height: 90px;
+    height: 80px;
     width: auto;
   }
 
   .nav-logo img:hover{
     transition: 0.3s;
-    height: 95px;
+    height: 81px;
     width: auto;
   }
 
@@ -92,27 +95,32 @@ section#contact {
 .nav-menu a {
       padding-right: 1.25rem;
       text-decoration: none;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       font-weight: 400;
       color: #333;
       transition: 0.3s;
   }
 
 .nav-menu a:hover{
-    font-size: 2rem; 
+    font-size: 1.57rem; 
     text-decoration: underline;
     text-decoration-color: #a8b1b3;
+}
+
+.mobile-menu-toggle{
+  display: none;
+  order: 3;
+  margin-left: 85%;
 }
   
     /*--- ABOUT ME ---*/
 
 #about-me {
   color:#333;
-  padding-top: 10.5rem;
+  padding-top: 10rem;
 } 
 
 #about-me h2 {
-  margin-top: 4rem;
   margin-left: 7rem;
   margin-bottom: 1.5rem;
   font-size: 2rem;
@@ -137,12 +145,23 @@ section#contact {
 .text {
   flex: 1;
   margin-right: -5rem;
+  max-width: 100%;
 }
 
 .text p {
   margin-left: 7rem;
   font-size: 1.4rem;
-  text-align:justify;
+  text-align:left;
+}
+
+.text a{
+  color: #333;
+  text-decoration-color: #748386;
+}
+
+.text a:hover{
+  text-decoration:underline;
+  text-decoration-color:#a8b1b3 ;
 }
 
 .portrait{
@@ -152,38 +171,36 @@ section#contact {
 
 .portrait img{
   max-width: 100%;
-  height: 600px;
+  height: 500px;
   width: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 3%;
   border-radius: 10px;
   box-shadow: 0 6px 10px #748386;
 }
 
 #about-me .plant-img{
-  position: absolute;
-  top: -5rem;
+  position: relative;
   transform: rotate(140deg);
   height: 300px;
   width: auto;
   z-index: -1;
+  margin-top: -30%;
 }
 
 #about-me .plant-img2{
-  position: absolute;
-  right: 10rem;
+  position:relative;
+  margin-left: 80%;
   bottom: 0;
-  transform: rotate(145deg);
+  transform: rotate(150deg);
   height: 300px;
   width: auto;
   z-index: -1;
+  margin-top: -60%;
 }
 
 #about-me .mobile-img{
   display: none;
 }
-
-
-
 
 /*--- My skills ---*/
 #my-skills {
@@ -199,10 +216,8 @@ section#contact {
     color: #333;
     letter-spacing: 1px;
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #a8b1b3;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
 }
 
 #my-skills .content{
@@ -253,9 +268,7 @@ section#contact {
   color: #333;
   letter-spacing: 1px;
   text-align: center;
-  text-decoration: underline;
-  text-decoration-color: #748386;
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
 }
 
 #my-projects .projects{
@@ -277,8 +290,8 @@ section#contact {
   overflow: hidden;
   border-radius: 10px;
   width: 100%;
-  max-width: 400px;
-  margin-bottom: 20px;
+  max-width: 27rem;
+  margin-bottom: 2rem;
 }
 
 #my-projects .text {
@@ -291,15 +304,22 @@ section#contact {
   visibility: hidden;
   transition: visibility 0.3s, opacity 0.3s;
   opacity: 0;
-  max-width: 80%;
-  text-align: justify;
+  width: 80%;
+  text-align: center;
   background-color: rgba(116, 131, 134, 0.5);
-  padding: 400px;
-
+  padding: 300px;
+  color: #fff;
 }
 
 #my-projects .text h4{
   color: #fff;
+  margin-bottom: 0;
+}
+
+#my-projects p{
+  color: #fff;
+  margin-left: 0;
+  text-align: center;
 }
 
 #my-projects .image-container:hover .text {
@@ -322,8 +342,10 @@ section#contact {
 /*--- CV ---*/
 #cv {
   background-color: rgba(116, 131, 134, 0.3);
+  padding-bottom: 3rem;
 }
 .cv-head h2{
+  position: relative;
   padding-top: 2.5rem;
   font-size: 2.5rem;
   font-weight: 400;
@@ -332,7 +354,7 @@ section#contact {
   text-align: center;
   text-decoration: underline;
   text-decoration-color: #748386;
-  margin-bottom: -2rem;
+  margin-bottom: 3rem;
 }
 #cv a{
   text-decoration: none;
@@ -346,18 +368,19 @@ section#contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75rem;
+  height: auto;
+  max-width: 100%;
 }
 
-
 .cv-container {
-  position: relative;
-  width: 39%;
-  height: auto;
-  padding-top: 55%;
+  position: relative; 
+  width: 80%;
+  max-width: 800px;
+  height: 0;
+  padding-top: 56.25%;
   box-shadow: 0 2px 8px 0 rgba(255, 255, 255, 0.8);
-  will-change: transform;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .cv-container iframe {
@@ -370,27 +393,29 @@ section#contact {
   border: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 #cv .cv-plant{
-  position: absolute;
-  bottom: -138rem;
+  position: relative;
+  margin-left: 22%;
+  margin-top: -50%;
   width: auto;
   height: 800px;
   z-index: -1;
   transform: rotate(300deg);
-  left:23rem;
 }
 
 #cv .cv-flower{
-  position: absolute;
-  bottom: -120rem;
+  position: relative;
+  margin-left: 60%;
+  margin-top: -50%;
   width: auto;
   height: 800px;
   z-index: -1;
   transform: rotate(30deg);
-  right:14rem;
 }
+
 /*--- Contact ---*/
 
 #contact h2{
@@ -400,8 +425,6 @@ section#contact {
   color: #333;
   letter-spacing: 1px;
   text-align: center;
-  text-decoration: underline;
-  text-decoration-color: #748386;
 }
 
 #contact h4{
@@ -446,104 +469,208 @@ section#contact {
   height: 65px;
 }
 
-#contact .contact-flower{
-  position:absolute;
-  height: 400px;
-  width: auto;
-  bottom: -165rem;
-  right: 5rem;
-}
-
-#contact .contact-plant{
-  position:absolute;
-  height: 400px;
-  width: auto;
-  bottom: -160rem;
-  left: 1rem;
-  transform: rotate(180deg);
-}
-
 #contact h3{
-  margin-top: 4rem;
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
   font-weight: 400;
+  margin-top: 2rem;
 }
 
-
-
-.hide-mobile{
-  display: none;
+#contact .contact-flower{
+  position:relative;
+  height: 400px;
+  width: auto;
+  margin-left: 80%;
+  margin-top: -80%;
 }
 
-.mobile-menu-button {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 1000;
-  background: none;
-  border: none;
-  display: none; 
+#contact .contact-plant{
+  position:relative;
+  height: 400px;
+  width: auto;
+  left: 1%;
+  transform: rotate(180deg);
+  margin-top: -80%;
 }
 
+/*--- mobile view ---*/
 
-@media (max-width: 3000px) {
+@media (width < 1900px) {
 
-}
+/*--- cv ---*/
 
-@media (max-width: 1440px) {
-
-}
-
-@media (max-width: 1280px) {
-}
-
-@media (max-width: 1024px) {
-
-}
-
-@media (max-width: 900px) {
-  
-}
-
-@media (width < 800px) {
-  .mobile-menu-button {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-    background: none;
-    border: none;
+  #cv{
+    padding-bottom: 3rem;
   }
-
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-
-  .nav-logo {
+  .cv-flower{
     display: none;
   }
 
+/*--- contact me ---*/
 
-  /*--- about me ---*/
+  .contact-flower{
+    display: none;
+  }
+
+}
+
+@media (width < 1440px) {
+
+/*--- cv ---*/
+
+  .cv-plant{
+    display: none;
+  }
+  #cv{
+    padding-bottom: 3rem;
+  }
+
+}
+
+@media (width < 1000px) {
+
+/*--- navigation ---*/
+
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-logo img{
+    position: relative;
+    height: 65px;
+    width: auto;
+    top: 0.5rem;
+    left: 0%;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+  }
+
+  .nav-logo img:hover{
+    height: 66px;
+    width: auto;
+  }
+
+  .nav-menu a {
+    font-size: 1.47rem;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover{
+  font-size: 1.5rem; 
+  text-decoration: underline;
+  text-decoration-color: #a8b1b3;
+}
+
+/*--- about me ---*/
+
+  #about-me{
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+  }
+  .text{
+    margin-left:-2rem ;
+    margin-top: -2rem;
+  }
+  .portrait{
+    width: 100%;
+    margin-left: -1rem;
+  }
+
+/*--- projects ---*/
+
+  #my-projects .image-container img {
+    filter: blur(3.5px);
+  }
+  #my-projects .text{
+    visibility: visible;
+    opacity: 1;
+    margin-left: 1px;
+  }
+
+  .plant-img2 {
+    display: none;
+  }
+
+/*--- cv ---*/
+
+  #cv{
+    padding-bottom: 3rem;
+  }
+    
+  .cv-flower{
+    display: none;
+  }
+  .cv-plant{
+    display: none;
+  }
+
+/*--- contact me ---*/
+
+  .contact-flower{
+    display: none;
+  }
+
+}
+
+@media (width < 800px) {
+
+/*--- navigation ---*/
+  .nav-menu {
+    display: none; 
+    flex-direction: column; 
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(116, 131, 134, 0.8);
+    backdrop-filter:inherit ;
+    padding: 2rem;
+    box-sizing: border-box;
+    z-index: 98;
+
+}
+
+.nav-menu.active {
+    display: flex; 
+}
+
+.mobile-menu-toggle {
+    display: block; 
+    cursor: pointer;
+
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    right: 0;
+}
+
+.nav-logo img{
+  position: absolute;
+  left: 2%;
+}
+.nav-logo img:hover{
+  height: 65px;
+}
+
+/*--- about me ---*/
   #about-me {
       display: flex;
       flex-direction: column;
       align-items: center; 
       justify-content: center;
-      padding-top: 3.5rem;
+      padding-top: 12rem;
   }
 
   #about-me h2{
     margin-top: 0;
+    font-size: 1.7rem;
   }
 
   #about-me .content {
@@ -558,12 +685,16 @@ section#contact {
     margin-right: 7rem;
   }
  
+  .text p{
+    font-size: 1.1rem;
+  }
   .portrait img {
       width: 70%; 
       max-width: 100%; 
       height: auto;
       right: 0;
       margin-bottom: 2rem;
+      margin-left: 0;
 
   }
   #about-me .mobile-img{
@@ -580,28 +711,31 @@ section#contact {
       display: none;
   }
 
-  /*--- my projects ---*/
- 
+/*--- projects ---*/
+
+  #my-projects .image-container img {
+    filter: blur(3.5px);
+  }
   #my-projects .text{
-   visibility: visible;
-   opacity: 1;
-
+    visibility: visible;
+    opacity: 1;
+    margin-left: 1px;
   }
 
-  /*--- cv ---*/
 
-  #cv .cv-area{
-      display: none;
-  }
-  .cv-head{
-      padding-bottom: 5rem;
-  }
-  .cv-plant, .cv-flower{
-      display: none;
-  }
+/*--- cv ---*/
 
-  /*---contact/footer---*/
-  .contact-plant, .contact-flower{
+#cv{
+  display: none;
+}
+
+/*--- contact me ---*/
+
+#contact{
+  background-color: rgba(116, 131, 134, 0.5);
+  padding-bottom: 2rem;
+}
+.contact-flower, .contact-plant{
       display: none;
   }
 }

@@ -2,33 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Marion Poljakov</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/25a4e67df7.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
 
     <nav id="nav" class="nav-bar" class="nav-bar hide-mobile">
-    <ul class="nav-logo">
-        <li><a href="#"><img src="images/logo.png"></a></li>
-    </ul>
-    <ul class="nav-menu">
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#my-skills">My skills</a></li>
-        <li><a href="#my-projects">My projects</a></li>
-        <li><a href="#contact">Contact me</a></li>
-    </ul>
-        <button id="mobile-menu-button" class="mobile-menu-button" aria-label="Toggle Menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </button>
+        <ul class="nav-logo">
+            <li><a href="#"><img src="images/logo.png" alt="logo"></a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#my-skills">My skills</a></li>
+            <li><a href="#my-projects">My projects</a></li>
+            <li><a href="#cv">My resume</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
     </nav>
 
     <section id="about-me">
+        <img src="images/plant1.png" class="plant-img" alt="plant-img">
         <div class="content">
             <div class="content-container">
                 <div class="text">
@@ -36,28 +41,27 @@
 
                     <p>My passion for software engineering started not that long ago and ever since I have been very fascinated by it. I do not have many accomplishments in this field, but I am eager to learn about it every day.</p>
 
-                    <p>In my free time I do things which make me happy, such as crocheting, which gives me time to lay back and rewind, singing that has made me consistent with appearances, and also keeping myself in shape both mentally and physically with sports.</p>    
+                    <p>In my free time I do things which make me happy, such as <a href="https://drive.google.com/drive/folders/1VWtOl_16sEAEH3nGSXhLWZlIxDbmqUUw?usp=sharing" target="_blank">crocheting</a>, which gives me time to lay back and rewind, singing that has made me consistent with appearances, and also keeping myself in shape both mentally and physically with sports.</p>    
                 </div>
             </div>
             <div class="portrait">
-                <img src="images/portrait.jpg">
+                <img src="images/portrait.jpg" alt="myself">
             </div>
         </div>
-        <img src="images/plant1.png" class="plant-img">
-        <img src="images/plant2.png" class="plant-img2">
-        <img src="images/plant1.png" class="mobile-img">
+        <img src="images/plant2.png" class="plant-img2" alt="plant-img2">
+        <img src="images/plant1.png" class="mobile-img" alt="mobile-img">
     </section>
 
     <section id="my-skills">
             <h2>My skills</h2>
         <div class="content">
             <div class="row">
-                <img src="images/html.png">
-                <img src="images/css.png">
-                <img src="images/javascript.png">
-                <img src="images/figma.png">
-                <img src="images/mariadb.png">
-                <img src="images/react.png">
+                <img src="images/html.png" alt="html">
+                <img src="images/css.png" alt="css">
+                <img src="images/javascript.png" alt="js">
+                <img src="images/figma.png" alt="figma">
+                <img src="images/mariadb.png" alt="mariadb">
+                <img src="images/react.png" alt="react">
             </div>
         </div>
     </section>
@@ -67,25 +71,33 @@
         <div class="projects">
             <div class="image-container">
                 <a href="https://marionvs23.ikt.khk.ee/javascript/final/" target="_blank">
-                    <img src="images/memorygame.png">
+                    <img src="images/memorygame.png" alt="memorygame">
                     <div class="text">
-                        <h4>Memory card game</h4> 
+                        <h4>Memory card game</h4>
+                        <p>Mainly based on JavaScript, HTML, and CSS. Has many functions such as a score system, a timer and a dark mode switch.</p>
+                        <i class="fa-solid fa-right-to-bracket"></i> 
                     </div>
                 </a>
             </div>
             <div class="image-container">
                 <a href="https://marionvs23.ikt.khk.ee/veebiarendus/lopuprojekt/veeb-osa-eng.html" target="_blank">
-                    <img src="images/photographer.png">
+                    <img src="images/photographer.png" alt="photographer">
                     <div class="text">
                         <h4>Photographers site</h4>
+                        <p>Made with HTML, CSS, and a bit of JS. An E-portfolio for a photographer, made it with a coursemate.</p>
+                        <i class="fa-solid fa-right-to-bracket"></i>
                     </div>
                 </a>
             </div>
             <div class="image-container">
                 <a href="https://marionvs23.ikt.khk.ee/javascript/aasta_tegija/" target="_blank">
-                    <img src="images/competition.png">
+                    <img src="images/competition.png" alt="competition">
                     <div class="text">
-                        <h4>Competition "Aasta tegija 2024"</h4>
+                        <h4>"Aasta tegija 2024"</h4>
+                        <p>
+                            Made with HTML, CSS and JS. Unfinished group project which was made for a competition but it shows how much I can do in a 24h sprint.
+                        </p>
+                        <i class="fa-solid fa-right-to-bracket"></i>
                     </div>
                 </a>
             </div>
@@ -99,13 +111,11 @@
             </div>
             <div class="cv-area">
                 <div class="cv-container">    
-                    <iframe loading="lazy"
-                        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFwwYwUKt8&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-                    </iframe>
+                    <iframe src="images/CV_Marion_Poljakov.pdf" type="application/pdf"></iframe>
                 </div>
             </div>
-        <img src="images/plant1.png" class="cv-plant">
-        <img src="images/flower.png" class="cv-flower">
+        <img src="images/plant1.png" class="cv-plant" alt="cv-plant">
+        <img src="images/flower.png" class="cv-flower" alt="cv-flower">
         </container>
     </section>
 
@@ -114,12 +124,12 @@
             <i class="fa-solid fa-envelope"></i><h4>marion.poljakov@voco.ee</h4>
             <i class="fa-solid fa-phone"></i><h4>+372 523 0673</h4>
         <div class="contact-info">
-            <a href="https://github.com/marionpol"><img src="images/github.png"></a>
-            <a href="https://www.linkedin.com/in/marion-poljakov-194565263/"><img src="images/linkedin.png"></a>
+            <a href="https://github.com/marionpol" target="_blank"><img src="images/github.png" alt="github"></a>
+            <a href="https://www.linkedin.com/in/marion-poljakov-194565263/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
         </div>
-        <img src="images/flower2.png" class="contact-flower">
-        <img src="images/plant1.png" class="contact-plant">
-            <h3>&copy Marion Poljakov 2024</h3>
+            <h3>&copyMarion Poljakov 2024</h3>
+            <img src="images/flower2.png" class="contact-flower" alt="contact-flower">
+            <img src="images/plant1.png" class="contact-plant" alt="contact-plant">
     </section>
 
     <script src="script.js"></script> 
